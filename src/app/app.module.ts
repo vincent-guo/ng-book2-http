@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { SimpleHttpComponent } from './simple-http/simple-http.component';
 
 @NgModule({
@@ -12,7 +12,8 @@ import { SimpleHttpComponent } from './simple-http/simple-http.component';
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
